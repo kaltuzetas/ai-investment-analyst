@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+dist/
+
+# Environment — NEVER commit
+.env
+.env.local
+.env.*.local
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend — core business logic (not published)
+proxy.js
+
+# Strategy & marketing documents (not published)
+TASKS.md
+INVESTOR_DECK.md
+LOOM_DEMO_PLAN.md
+G.md
+TEXTS.md
+ARTICLE_PREMIUM.md
+scripts/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/

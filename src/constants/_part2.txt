@@ -1,0 +1,636 @@
+};
+
+// ─── English overrides (text-only fields) ──────────────────────────────────
+
+const EN_AAPL: AnalysisData = {
+  ...DEMO_DATA.AAPL,
+  asset: {
+    ...DEMO_DATA.AAPL.asset,
+    type: "Stock",
+    sector: "Technology",
+    companyType: "Consumer Electronics / Ecosystem Company",
+    businessModel: "Device sales + services (App Store, iCloud, Apple Music, Apple Pay)",
+    mainProduct: "iPhone, Mac, iPad, Apple Watch, AirPods, Services",
+    marketSize: "$3+ trillion (consumer electronics + ecosystem)",
+    industryGrowth: "5–8% per year",
+    marketShare: "~17% smartphones globally, ~55% US",
+    moat: "Ecosystem lock-in: high switching costs, brand loyalty, 2B+ active devices",
+    qualityReason: "World's best margins, $100B+/year cash flow, massive stock buybacks",
+    risks: ["iPhone concentration (52% revenue)", "Regulatory pressure on App Store", "Slowing growth in China"],
+  },
+  valuation: {
+    ...DEMO_DATA.AAPL.valuation,
+    bubbleRisk: "Moderate — P/E above historical average",
+    longTermProjection: "$220–260 in 3–5 years if services growth continues",
+    metrics: { ...DEMO_DATA.AAPL.valuation?.metrics, marketCap: "$2.8T" },
+  },
+  trendAnalysis: {
+    ...DEMO_DATA.AAPL.trendAnalysis,
+    keyMilestones: [
+      { year: "2020", event: "Apple Silicon transition (M1)", impact: "positive" },
+      { year: "2022", event: "China supply chain disruptions", impact: "negative" },
+      { year: "2023", event: "Record services quarter $21B", impact: "positive" },
+      { year: "2024", event: "Apple Intelligence (AI) launch", impact: "positive" },
+    ],
+    trendConclusion: "Apple has grown steadily over 10 years, services became the new growth driver. Growth has slowed but earnings quality remains high.",
+  },
+  macro: {
+    ...DEMO_DATA.AAPL.macro,
+    globalContext: "Fed holding rate at 5.25–5.5%. Inflation declining. Rate cut expectations in H2 2025.",
+    interestRates: { fedRate: "5.25–5.5%", trend: "stable", impactNote: "High rates pressure tech company multiples" },
+    inflation: { usCPI: "3.2%", trend: "falling", impactNote: "Declining inflation is positive for consumer spending" },
+    geopolitics: [
+      { event: "US-China tensions, manufacturing risks", relevance: "high", impact: "negative", date: "2025-03" },
+      { event: "App Store antitrust investigations in EU", relevance: "medium", impact: "negative", date: "2025-02" },
+    ],
+    sectorMacro: "Tech sector under pressure from high rates, but AI narrative supports investor interest",
+    recession: { probability: "medium", note: "US recession probability ~30% in 2025" },
+    commodities: { oil: "$75/bbl", gold: "$2,300/oz", relevance: "Low direct commodity exposure" },
+    newsBackground: [
+      { title: "Apple unveiled new MacBooks with M4", summary: "New chips show 40% performance improvement", date: "2025-03-15", sentiment: "positive", source: "Bloomberg" },
+      { title: "EU fined Apple €1.8B", summary: "For violating competition rules in App Store", date: "2025-03-04", sentiment: "negative", source: "Reuters" },
+    ],
+    macroConclusion: "Macro environment neutral for Apple. China risks offset by services and AI growth.",
+  },
+  kondratiev: {
+    ...DEMO_DATA.AAPL.kondratiev,
+    phaseDescription: "Kondratiev Autumn — peak financialization, high multiples, beginning of capital reallocation",
+    waveTechnology: "Information Technology / Artificial Intelligence",
+    assetFitReason: "Apple benefits from the AI wave, but as a mature company yields to younger players in growth speed",
+    historicalAnalogy: "Microsoft in 1998–2000 (dominance + start of multiple compression)",
+    riskFromCycle: "Multiple compression during transition to Kondratiev Winter",
+    opportunityFromCycle: "Apple Intelligence could become a new growth cycle within the AI wave",
+    kondratievConclusion: "Apple is in the maturity zone of the current wave. Excellent defensive asset, but not the leader of the next cycle.",
+  },
+  technical: {
+    ...DEMO_DATA.AAPL.technical,
+    technicalNote: "Sideways range $172–$195. Break above $195 opens path to $210. Below $172 — buy zone.",
+  },
+  growth: {
+    ...DEMO_DATA.AAPL.growth,
+    userGrowth: "+8% active devices",
+    growthDrivers: ["Services (+14% y/y)", "Apple Intelligence (AI)", "Emerging Markets", "Vision Pro ecosystem"],
+  },
+  historical: {
+    ...DEMO_DATA.AAPL.historical,
+    crisisBehavior: "Falls with market, recovers faster than broad market",
+  },
+  sentiment: {
+    ...DEMO_DATA.AAPL.sentiment,
+    sentimentNote: "Large funds holding positions, no active buying. Market awaiting Fed signals.",
+  },
+  riskProfile: {
+    ...DEMO_DATA.AAPL.riskProfile,
+    downsideRisk: "-15% in market correction, -25% in recession",
+    factors: ["iPhone concentration", "China dependency (18% revenue)", "Antitrust risks"],
+  },
+  recommendation: {
+    ...DEMO_DATA.AAPL.recommendation,
+    timeHorizon: "12–18 months",
+    summary: "Apple is a quality asset with a solid business. Current price is fair, no reason to buy aggressively. Waiting for correction to $165–175 zone to build position.",
+    keyPoints: [
+      "Services growing 14% y/y — long-term margin driver",
+      "Apple Intelligence creates new iPhone upgrade supercycle",
+      "P/E 28x above historical 23x average — slight overvaluation",
+      "Buybacks $90B/year support stock in sideways market",
+      "Buy zone $165–175 offers 20%+ upside to target",
+    ],
+  },
+  sources: [
+    { name: "Apple Q1 2025 Earnings", url: "https://investor.apple.com", data: "Revenue $119.6B, EPS $2.40", date: "2025-02-06" },
+    { name: "Bloomberg Intelligence", url: "https://bloomberg.com", data: "2025 services revenue forecast", date: "2025-03-01" },
+  ],
+};
+
+const EN_BTC: AnalysisData = {
+  ...DEMO_DATA.BTC,
+  asset: {
+    ...DEMO_DATA.BTC.asset,
+    type: "Cryptocurrency",
+    sector: "Cryptocurrency / Digital Gold",
+    companyType: "Decentralized Network",
+    businessModel: "Decentralized payment network and store of value with fixed supply",
+    mainProduct: "Digital gold, store of value",
+    marketSize: "$2+ trillion (crypto market), competing with gold ($13T)",
+    industryGrowth: "Unpredictable, cyclical",
+    marketShare: "~52% crypto market dominance",
+    moat: "First mover, most recognized, maximum liquidity, network effect",
+    qualityReason: "Absolute scarcity (21M), hashrate at all-time highs, institutional adoption via ETF",
+    risks: ["Regulatory risk in US/EU", "CBDC competition", "Miner concentration", "Quantum computing (long-term)"],
+  },
+  valuation: {
+    ...DEMO_DATA.BTC.valuation,
+    bubbleRisk: "Moderate — below ATH, not in euphoria",
+    longTermProjection: "$150,000–200,000 by end of 2025–2026 cycle",
+    metrics: { ...DEMO_DATA.BTC.valuation?.metrics, marketCap: "$1.65T" },
+  },
+  trendAnalysis: {
+    ...DEMO_DATA.BTC.trendAnalysis,
+    keyMilestones: [
+      { year: "2020", event: "Halving — BTC rose from $8K to $69K", impact: "positive" },
+      { year: "2022", event: "FTX collapse, BTC -75% from ATH", impact: "negative" },
+      { year: "2024", event: "Bitcoin ETF approval ($50B+ inflows)", impact: "positive" },
+      { year: "2024", event: "Halving — block reward 3.125 BTC", impact: "positive" },
+    ],
+    trendConclusion: "BTC follows 4-year halving cycles. We are in early phase of a new bull cycle after April 2024 halving.",
+  },
+  macro: {
+    ...DEMO_DATA.BTC.macro,
+    globalContext: "Fed rate cuts in H2 2025 create favorable backdrop for risk assets including BTC",
+    interestRates: { fedRate: "5.25–5.5%", trend: "falling", impactNote: "Rate cuts historically positive for BTC" },
+    inflation: { usCPI: "3.2%", trend: "falling", impactNote: "BTC viewed as inflation hedge" },
+    geopolitics: [
+      { event: "US considering strategic Bitcoin reserve", relevance: "high", impact: "positive", date: "2025-03" },
+      { event: "China banned crypto trading", relevance: "medium", impact: "neutral", date: "2021-09" },
+    ],
+    sectorMacro: "Crypto sector rising post-halving. ETF inflows $50B+ supporting price. Institutional demand growing.",
+    recession: { probability: "medium", note: "Recession negative for BTC short-term, but long-term BTC benefits from money printing" },
+    commodities: { oil: "$75/bbl", gold: "$2,300/oz", relevance: "BTC correlates with gold as safe-haven asset long-term" },
+    newsBackground: [
+      { title: "BlackRock IBIT reached $20B in 3 months", summary: "Largest ETF product launch in history", date: "2025-03-20", sentiment: "positive", source: "Bloomberg" },
+      { title: "El Salvador doubled BTC reserves", summary: "Government bought 500 more BTC", date: "2025-03-10", sentiment: "positive", source: "Reuters" },
+    ],
+    macroConclusion: "Macro environment favorable for BTC. Halving + ETF + potential rate cuts = historically best entry timing.",
+  },
+  kondratiev: {
+    ...DEMO_DATA.BTC.kondratiev,
+    phaseDescription: "Kondratiev Winter — destruction of old financial systems, search for alternatives",
+    waveTechnology: "Blockchain / Decentralized Finance",
+    assetFitReason: "BTC fits perfectly into Kondratiev Winter as alternative to traditional finance",
+    historicalAnalogy: "Gold in the 1970s — 10x rise amid Bretton Woods system collapse",
+    riskFromCycle: "Short-term volatility during deleveraging at start of winter",
+    opportunityFromCycle: "BTC as digital gold benefits from loss of trust in fiat currencies",
+    kondratievConclusion: "BTC is a Kondratiev Winter asset. Long-term trend toward decentralized money adoption continues.",
+  },
+  technical: {
+    ...DEMO_DATA.BTC.technical,
+    technicalNote: "BTC in uptrend. $76K support holding. Break of $96K opens path to $110K+. RSI not overbought.",
+  },
+  growth: {
+    ...DEMO_DATA.BTC.growth,
+    userGrowth: "+15% addresses with non-zero balance",
+    growthDrivers: ["Bitcoin ETF inflows", "April 2024 halving", "Corporate reserves (MicroStrategy, Tesla)", "US strategic reserve"],
+  },
+  historical: {
+    ...DEMO_DATA.BTC.historical,
+    crisisBehavior: "Drops sharply at start of crisis, then recovers at leading pace",
+  },
+  sentiment: {
+    ...DEMO_DATA.BTC.sentiment,
+    sentimentNote: "Institutional investors actively buying via ETF. Whales accumulating. Retail euphoria hasn't started yet — good sign.",
+  },
+  riskProfile: {
+    ...DEMO_DATA.BTC.riskProfile,
+    downsideRisk: "-40–60% in bear market",
+    factors: ["High volatility", "Regulatory uncertainty", "Holder concentration (top 100 addresses = 14%)"],
+  },
+  cryptoMetrics: DEMO_DATA.BTC.cryptoMetrics ? {
+    ...DEMO_DATA.BTC.cryptoMetrics,
+    networkUsage: "~600K transactions/day",
+    activeAddresses: "~1M/day",
+    transactions: "600K/day",
+    ecosystem: ["Lightning Network", "Ordinals/Inscriptions", "Wrapped BTC in DeFi"],
+    tokenomics: "Fixed supply 21M, ~19.7M mined, ~1.3M remaining until 2140",
+  } : null,
+  recommendation: {
+    ...DEMO_DATA.BTC.recommendation,
+    timeHorizon: "12–24 months",
+    summary: "BTC in early phase of new bull cycle post-halving. Current prices attractive for long-term position. High risk = high potential.",
+    keyPoints: [
+      "April 2024 halving historically precedes 3–5x gains over 12–18 months",
+      "Bitcoin ETF brought $50B+ — new structural demand from institutions",
+      "Technical analysis: bullish trend, $76K support holding",
+      "Cycle target $130,000–150,000 based on historical pattern",
+      "Stop-loss $68K — level before 2021 ATH breakout",
+    ],
+  },
+  sources: [
+    { name: "Glassnode On-chain Analytics", url: "https://glassnode.com", data: "Bitcoin network metrics, active addresses", date: "2025-04-08" },
+    { name: "Bloomberg ETF Flow Tracker", url: "https://bloomberg.com", data: "Bitcoin ETF inflows", date: "2025-04-07" },
+  ],
+};
+
+const EN_TSLA: AnalysisData = {
+  ...DEMO_DATA.TSLA,
+  asset: {
+    ...DEMO_DATA.TSLA.asset,
+    type: "Stock",
+    sector: "Electric Vehicles / Energy / AI",
+    companyType: "EV manufacturer + technology company",
+    businessModel: "EV manufacturing, energy products (Megapack, Powerwall), AI development (FSD, Optimus)",
+    mainProduct: "Model S/3/X/Y/Cybertruck, FSD, Megapack, Powerwall",
+    marketSize: "$8T (auto) + $5T (energy) + AI robotics",
+    industryGrowth: "EV +25% y/y, Energy +40% y/y",
+    marketShare: "~18% global EV market (declining)",
+    moat: "Vertical integration, Supercharger network, FSD software, AI training data",
+    qualityReason: "Transformation from auto to energy and AI — enormous potential, execution uncertain",
+    risks: ["BYD pressure in China", "Musk reputational risks", "Slowing EV sales growth", "High multiple"],
+  },
+  valuation: {
+    ...DEMO_DATA.TSLA.valuation,
+    bubbleRisk: "High — P/E 80x justified only if FSD/Optimus are realized",
+    longTermProjection: "$400–600 if robotaxi and Optimus succeed, $100–150 if not",
+    metrics: { ...DEMO_DATA.TSLA.valuation?.metrics, marketCap: "$810B", revenueGrowth: "-1% y/y (2024)", profitGrowth: "-53% y/y (2024)" },
+  },
+  trendAnalysis: {
+    ...DEMO_DATA.TSLA.trendAnalysis,
+    keyMilestones: [
+      { year: "2020", event: "S&P 500 inclusion, stock up 700%", impact: "positive" },
+      { year: "2022", event: "Musk bought Twitter, sold TSLA shares", impact: "negative" },
+      { year: "2023", event: "Price wars, margin fell from 29% to 17%", impact: "negative" },
+      { year: "2024", event: "Cybercab robotaxi announced for 2026", impact: "positive" },
+    ],
+    trendConclusion: "Tesla is transforming from auto company to technology company. Growth has slowed, but FSD/Optimus potential is enormous.",
+  },
+  macro: {
+    ...DEMO_DATA.TSLA.macro,
+    globalContext: "Global EV transition continues, but slower than expected. US subsidies remain.",
+    interestRates: { fedRate: "5.25–5.5%", trend: "falling", impactNote: "Rate cuts will increase auto loan affordability" },
+    inflation: { usCPI: "3.2%", trend: "falling", impactNote: "Declining inflation positive for consumer auto purchases" },
+    geopolitics: [
+      { event: "US-China trade war, tariffs on BYD", relevance: "high", impact: "positive", date: "2025-03" },
+      { event: "Tesla boycott in Europe over Musk actions", relevance: "medium", impact: "negative", date: "2025-02" },
+    ],
+    sectorMacro: "EV sector in transition. Buyers awaiting more affordable models ($25K Tesla). BYD competition intensifying.",
+    recession: { probability: "medium", note: "Recession would hit premium auto sales" },
+    commodities: { oil: "$75/bbl", gold: "$2,300/oz", relevance: "Low oil prices reduce EV transition incentives" },
+    newsBackground: [
+      { title: "Tesla to launch Cybercab robotaxi in 2026", summary: "Mass production at $30K price point", date: "2025-03-25", sentiment: "positive", source: "Reuters" },
+      { title: "Q1 2025 sales declined 13%", summary: "Below analyst forecasts", date: "2025-04-02", sentiment: "negative", source: "Bloomberg" },
+    ],
+    macroConclusion: "Macro neutral for Tesla. Sales decline is short-term pain, long-term thesis is FSD and Optimus.",
+  },
+  kondratiev: {
+    ...DEMO_DATA.TSLA.kondratiev,
+    phaseDescription: "Kondratiev Winter — old industries being destroyed, new technologies laying foundation",
+    waveTechnology: "Electrification / AI Robotics",
+    assetFitReason: "Tesla at the intersection of two megatrends: transport electrification and AI robotics",
+    historicalAnalogy: "Ford in the 1910s — manufacturing changes civilization, company experiences cycles of rises and falls",
+    riskFromCycle: "Auto market restructuring may hurt badly before the next upturn",
+    opportunityFromCycle: "Optimus robots and robotaxi — potentially the largest markets in history",
+    kondratievConclusion: "Tesla is a bet on the start of a new Kondratiev wave. High risk, but potentially 10x asset.",
+  },
+  technical: {
+    ...DEMO_DATA.TSLA.technical,
+    technicalNote: "TSLA in downtrend. $220 support critical. Break would open path to $180. Need break of $290 for reversal.",
+  },
+  growth: {
+    ...DEMO_DATA.TSLA.growth,
+    userGrowth: "+8% Tesla fleet on roads",
+    growthDrivers: ["FSD v13 — autonomous driving", "Optimus robot (2025 pilot)", "Cybercab robotaxi 2026", "Megapack energy +113% y/y"],
+  },
+  historical: {
+    ...DEMO_DATA.TSLA.historical,
+    crisisBehavior: "One of the most volatile S&P 500 stocks, falls more than market",
+  },
+  sentiment: {
+    ...DEMO_DATA.TSLA.sentiment,
+    sentimentNote: "Institutional investors reducing positions due to margin compression and Musk reputational risks.",
+  },
+  riskProfile: {
+    ...DEMO_DATA.TSLA.riskProfile,
+    downsideRisk: "-40% if FSD doesn't get regulatory approval",
+    factors: ["Musk dependency", "FSD/robotaxi regulatory approval", "BYD competition in China", "High multiple"],
+  },
+  recommendation: {
+    ...DEMO_DATA.TSLA.recommendation,
+    timeHorizon: "18–36 months",
+    summary: "Tesla is a high-risk bet on the future. Current price has priced in a lot of optimism. Waiting for correction to $210–230 and confirmation of FSD/Optimus progress before buying.",
+    keyPoints: [
+      "FSD v13 showing progress — regulator approval may come in 2025–2026",
+      "Optimus robot in pilot at Tesla factory — potential $10T market",
+      "Margin fell from 29% to 6% — serious short-term negative",
+      "P/E 80x only justified by robotaxi/Optimus scenario",
+      "Buy zone $210–230 offers 40%+ potential if thesis plays out",
+    ],
+  },
+  sources: [
+    { name: "Tesla Q4 2024 Earnings", url: "https://ir.tesla.com", data: "Revenue $25.7B, margin 6.2%", date: "2025-01-29" },
+    { name: "Morgan Stanley TSLA Note", url: "https://morganstanley.com", data: "Target $400 based on robotaxi thesis", date: "2025-03-15" },
+  ],
+};
+
+const EN_NVDA: AnalysisData = {
+  ...DEMO_DATA.NVDA,
+  asset: {
+    ...DEMO_DATA.NVDA.asset,
+    type: "Stock",
+    sector: "Semiconductors / AI Infrastructure",
+    companyType: "GPU and AI accelerator manufacturer",
+    businessModel: "GPU sales, AI accelerators (H100/H200/B200), CUDA software ecosystem, cloud services",
+    mainProduct: "GeForce, H100/H200/B200 GPU, DGX, CUDA, Omniverse",
+    marketSize: "$500B+ (AI chips 2026), $1T by 2030",
+    industryGrowth: "+60% y/y (data centers), +35% y/y (AI infrastructure)",
+    marketShare: "~85% of AI training GPU market",
+    moat: "CUDA ecosystem (20 years), best performance per watt, 4M developers",
+    qualityReason: "Data center revenue +200% y/y, 73% margin, ROIC >100% — one of the best businesses in history",
+    risks: ["Export restrictions to China", "Slowdown in hyperscaler capex", "AMD MI300X/MI400 competition", "Valuation already pricing in much growth"],
+  },
+  valuation: {
+    ...DEMO_DATA.NVDA.valuation,
+    bubbleRisk: "Moderate-high — P/E 35x justified at current growth, but any slowdown = sharp correction",
+    longTermProjection: "$1,400–1,800 in 2–3 years if data center growth holds",
+    metrics: { ...DEMO_DATA.NVDA.valuation?.metrics, marketCap: "$2.57T" },
+  },
+  trendAnalysis: {
+    ...DEMO_DATA.NVDA.trendAnalysis,
+    keyMilestones: [
+      { year: "2022", event: "ChatGPT — NVIDIA became the main AI beneficiary", impact: "positive" },
+      { year: "2023", event: "H100 GPU shortage, revenue x3 in one year", impact: "positive" },
+      { year: "2024", event: "Blackwell (B200) — new generation AI chips", impact: "positive" },
+      { year: "2025", event: "Data center revenue exceeded $100B/year", impact: "positive" },
+    ],
+    trendConclusion: "NVIDIA is the primary beneficiary of the AI revolution. Growth is unprecedented for a company of this scale. The question is not 'will it grow' but 'how long can this pace last'.",
+  },
+  macro: {
+    ...DEMO_DATA.NVDA.macro,
+    globalContext: "Hyperscalers (Microsoft, Google, Amazon, Meta) investing $300B+ in AI infrastructure in 2026.",
+    interestRates: { fedRate: "3.75%", trend: "falling", impactNote: "Low rates support technology company capex budgets" },
+    inflation: { usCPI: "2.8%", trend: "stable", impactNote: "Stable inflation allows long-term investment planning" },
+    geopolitics: [
+      { event: "H100/H200 export to China restricted, A800 allowed", relevance: "high", impact: "negative", date: "2026-01" },
+      { event: "US allies building AI hubs with NVIDIA as priority supplier", relevance: "medium", impact: "positive", date: "2026-02" },
+    ],
+    sectorMacro: "AI capex reached $300B/year — structural demand for GPUs. AMD/Intel competition growing but NVIDIA maintains advantage.",
+    recession: { probability: "low", note: "Even in recession, AI infrastructure will remain a corporate priority" },
+    commodities: { oil: "$70/bbl", gold: "$2,850/oz", relevance: "TSMC dependency is critical — Taiwan risk remains" },
+    newsBackground: [
+      { title: "Microsoft ordered 500K NVIDIA B200 GPUs", summary: "Largest order in history — $15B over one year", date: "2026-03-20", sentiment: "positive", source: "Bloomberg" },
+      { title: "NVIDIA announced Rubin — next generation 2027", summary: "3x performance vs Blackwell, new architecture", date: "2026-03-18", sentiment: "positive", source: "The Verge" },
+    ],
+    macroConclusion: "Macro is ideal for NVIDIA. Structural demand for AI chips will be sustained for at least 3–5 years.",
+  },
+  kondratiev: {
+    ...DEMO_DATA.NVDA.kondratiev,
+    phaseDescription: "Kondratiev Spring — new technology conquers market, leaders earn superprofits",
+    waveTechnology: "Artificial Intelligence / Neural Networks",
+    assetFitReason: "NVIDIA is the 'picks and shovels' of the AI gold rush, earning from all players simultaneously",
+    historicalAnalogy: "Cisco in 1995–1999 — internet infrastructure, 100x growth over 5 years",
+    riskFromCycle: "Investment peak may turn to pause like 2001 after the internet boom",
+    opportunityFromCycle: "AI wave is just beginning — physical robots, autonomous agents, quantum + AI hybrids",
+    kondratievConclusion: "NVIDIA is at the heart of the new Kondratiev wave. Unprecedented opportunity, but overvaluation risk is real.",
+  },
+  technical: {
+    ...DEMO_DATA.NVDA.technical,
+    technicalNote: "NVDA in strong bull trend. $960 support. Target $1,180. RSI 64 — room to grow.",
+  },
+  growth: {
+    ...DEMO_DATA.NVDA.growth,
+    userGrowth: "+150% CUDA installations per year",
+    growthDrivers: ["Data center (Blackwell B200 replacing H100)", "Sovereign AI (national clusters)", "Physical robots (Jetson)", "Omniverse / industrial simulation"],
+  },
+  historical: {
+    ...DEMO_DATA.NVDA.historical,
+    crisisBehavior: "Volatile as growth stock, falls more than market, recovers faster",
+  },
+  sentiment: {
+    ...DEMO_DATA.NVDA.sentiment,
+    sentimentNote: "Institutional investors in NVIDIA — mandatory position for any tech fund. FOMO is real but revenue growth justifies it.",
+  },
+  riskProfile: {
+    ...DEMO_DATA.NVDA.riskProfile,
+    downsideRisk: "-30% on data center slowdown, -50% in recession",
+    factors: ["Taiwan risk (TSMC makes all chips)", "Hyperscaler capex slowdown", "AMD/Intel competition", "Export restrictions"],
+  },
+  recommendation: {
+    ...DEMO_DATA.NVDA.recommendation,
+    timeHorizon: "12–24 months",
+    summary: "NVIDIA is the best AI-wave company with real revenue growth. Current price at slight premium. Buy on correction to $940–980. Target $1,350 if data center growth pace holds.",
+    keyPoints: [
+      "Blackwell B200 driving +78% y/y data center revenue — real money, not hype",
+      "CUDA monopoly — 20+ year ecosystem, switching to AMD costs 2+ years of re-engineering",
+      "Sovereign AI — 40+ countries building national clusters on NVIDIA",
+      "P/E 35x fair at +80% earnings — any slowdown = sharp pullback",
+      "Buy zone $940–980 offers 38%+ upside to $1,350 target",
+    ],
+  },
+  sources: [
+    { name: "NVIDIA Q1 FY2027 Earnings", url: "https://investor.nvidia.com", data: "Revenue $44.1B, Data Center $38.5B (+78% y/y)", date: "2026-05-28" },
+    { name: "Goldman Sachs NVDA Note", url: "https://goldmansachs.com", data: "Target $1,400, data center valuation upgrade", date: "2026-04-01" },
+  ],
+};
+
+const EN_ETH: AnalysisData = {
+  ...DEMO_DATA.ETH,
+  asset: {
+    ...DEMO_DATA.ETH.asset,
+    type: "Cryptocurrency",
+    sector: "Smart Contracts / DeFi / Web3",
+    companyType: "Decentralized blockchain platform",
+    businessModel: "Programmable blockchain — gas fees for smart contract execution, staking rewards",
+    mainProduct: "Smart contracts, DeFi, NFT, Layer 2 networks, staking",
+    marketSize: "$500B+ (DeFi TVL), competes for Web3 applications market",
+    industryGrowth: "DeFi +45% y/y, L2 networks +120% y/y",
+    marketShare: "~60% of smart contract platforms by TVL",
+    moat: "Network effect — 4000+ dApps, $80B+ TVL, ERC-20 standard universally adopted",
+    qualityReason: "Deflationary monetary policy (burn > issuance), decentralization, largest developer ecosystem",
+    risks: ["L2 networks 'stealing' gas fees from L1", "Solana competition for retail", "Complex upgrade governance", "Regulatory risk as security"],
+  },
+  valuation: {
+    ...DEMO_DATA.ETH.valuation,
+    bubbleRisk: "Moderate — below ATH, institutional adoption supporting floor",
+    longTermProjection: "$5,000–8,000 with L2 scaling and institutional DeFi",
+    metrics: { ...DEMO_DATA.ETH.valuation?.metrics, marketCap: "$318B" },
+  },
+  trendAnalysis: {
+    ...DEMO_DATA.ETH.trendAnalysis,
+    keyMilestones: [
+      { year: "2022", event: "The Merge — switch to Proof-of-Stake (-99% energy)", impact: "positive" },
+      { year: "2024", event: "ETH ETF approved in US, $10B+ inflows", impact: "positive" },
+      { year: "2024", event: "EIP-4844 (Dencun) — L2 fees down 100x", impact: "positive" },
+      { year: "2025", event: "Institutional DeFi — banks using Ethereum", impact: "positive" },
+    ],
+    trendConclusion: "Ethereum remains the base layer of Web3. PoS transition and L2 scaling are technological breakthroughs. Price lags BTC in current cycle — potential catch-up rally ahead.",
+  },
+  macro: {
+    ...DEMO_DATA.ETH.macro,
+    globalContext: "ETF inflows stable. Institutional DeFi growing. L2 networks (Arbitrum, Base) handle 10x more transactions than ETH L1.",
+    interestRates: { fedRate: "3.75%", trend: "falling", impactNote: "Low rates reduce opportunity cost of staking ETH (4–5% APY)" },
+    inflation: { usCPI: "2.8%", trend: "stable", impactNote: "ETH as deflationary asset attractive with stable inflation" },
+    geopolitics: [
+      { event: "SEC approved staking in ETH ETF", relevance: "high", impact: "positive", date: "2026-02" },
+      { event: "European banks using Ethereum for interbank settlements", relevance: "medium", impact: "positive", date: "2026-01" },
+    ],
+    sectorMacro: "DeFi TVL reached $120B. Institutional clients adopting Ethereum. L2 transactions exceeded Visa.",
+    recession: { probability: "low", note: "Recession pressures short-term but DeFi yield attractive in any market" },
+    commodities: { oil: "$70/bbl", gold: "$2,850/oz", relevance: "ETH correlates with risk assets short-term" },
+    newsBackground: [
+      { title: "BlackRock launched tokenized fund on Ethereum", summary: "$15B AUM in first month — largest on-chain fund", date: "2026-03-01", sentiment: "positive", source: "Bloomberg" },
+      { title: "Base (Coinbase L2) exceeded 10M DAU", summary: "Ethereum L2 ecosystem explosive, fees < $0.01", date: "2026-02-20", sentiment: "positive", source: "The Block" },
+    ],
+    macroConclusion: "Macro favorable for ETH. Institutional adoption + L2 scaling = structural demand growth.",
+  },
+  kondratiev: {
+    ...DEMO_DATA.ETH.kondratiev,
+    phaseDescription: "Kondratiev Winter — new financial technologies replace the old system",
+    waveTechnology: "Blockchain / Decentralized Finance",
+    assetFitReason: "Ethereum is the infrastructure layer for the new financial internet",
+    historicalAnalogy: "Internet protocols TCP/IP in the 1990s — invisible value infrastructure",
+    riskFromCycle: "Replacing old systems is painful — regulatory risks during transition",
+    opportunityFromCycle: "Tokenization of everything — all financial assets on Ethereum by 2030",
+    kondratievConclusion: "Ethereum is the base layer of the financial internet. Long-term asset for believers in the Web3 transition.",
+  },
+  technical: {
+    ...DEMO_DATA.ETH.technical,
+    technicalNote: "ETH consolidating $2,400–$3,200. Accumulation continues. Break of $3,200 opens path to $4,500. RSI neutral.",
+  },
+  growth: {
+    ...DEMO_DATA.ETH.growth,
+    userGrowth: "+45% L2 active addresses",
+    growthDrivers: ["L2 scaling (100x cheaper)", "Institutional DeFi", "RWA tokenization", "Staking ETF with 4–5% yield"],
+  },
+  historical: {
+    ...DEMO_DATA.ETH.historical,
+    crisisBehavior: "Correlates with BTC, falls deeper, recovers slower",
+  },
+  sentiment: {
+    ...DEMO_DATA.ETH.sentiment,
+    sentimentNote: "ETH lagging BTC in narrative, but fundamentally stronger. Quiet accumulation — good sign.",
+  },
+  riskProfile: {
+    ...DEMO_DATA.ETH.riskProfile,
+    downsideRisk: "-40–55% in bear market",
+    factors: ["Regulatory risk (security vs commodity)", "L2 cannibalization of L1 gas fees", "Solana competition for retail", "Governance complexity"],
+  },
+  cryptoMetrics: DEMO_DATA.ETH.cryptoMetrics ? {
+    ...DEMO_DATA.ETH.cryptoMetrics,
+    networkUsage: "~2M transactions/day (L1+L2)",
+    activeAddresses: "~500K/day L1, 5M+ L2",
+    transactions: "2M/day",
+    ecosystem: ["Uniswap", "Aave", "Arbitrum", "Base", "Optimism", "EigenLayer"],
+    tokenomics: "Deflationary with EIP-1559: burn > issuance, net supply -0.5%/year",
+  } : null,
+  recommendation: {
+    ...DEMO_DATA.ETH.recommendation,
+    timeHorizon: "18–30 months",
+    summary: "ETH is an undervalued asset in the current cycle. Strong fundamentals but BTC dominates the narrative. Buy in $2,400–$2,700 zone as a bet on a delayed rally and institutional DeFi.",
+    keyPoints: [
+      "ETH lagged BTC by +60% in cycle — historically this gap closes",
+      "BlackRock and banks tokenizing assets on Ethereum — structural demand",
+      "Deflationary issuance — supply falling, demand growing",
+      "Staking 4.2% APY competitive with treasuries at lower rates",
+      "$2,400–$2,700 zone offers 67%+ upside to $4,500 target",
+    ],
+  },
+  sources: [
+    { name: "Glassnode ETH On-chain", url: "https://glassnode.com", data: "Staked ETH: 34M (28% supply), burn rate 0.5%/yr", date: "2026-04-15" },
+    { name: "DeFi Llama TVL", url: "https://defillama.com", data: "Ethereum DeFi TVL $120B, Arbitrum $18B", date: "2026-04-18" },
+  ],
+};
+
+const EN_SPY: AnalysisData = {
+  ...DEMO_DATA.SPY,
+  asset: {
+    ...DEMO_DATA.SPY.asset,
+    type: "ETF",
+    sector: "Diversified / US Equities",
+    companyType: "Index ETF",
+    businessModel: "Passive replication of the S&P 500 index — 503 US companies by market cap",
+    mainProduct: "S&P 500 Index ETF, 1.3% dividend yield",
+    marketSize: "$50 trillion (US equity market)",
+    industryGrowth: "Historically +10% annually (S&P 500)",
+    marketShare: "~20% of global equity market capitalization",
+    moat: "None — passive index, advantage in liquidity and size ($600B AUM)",
+    qualityReason: "Diversification across 503 companies, automatic rebalancing, minimal tracking error",
+    risks: ["Top-10 concentration (35% weight)", "Systemic risk", "P/E 22x above historical 16x", "Trade wars"],
+  },
+  valuation: {
+    ...DEMO_DATA.SPY.valuation,
+    bubbleRisk: "Moderate — Shiller P/E 31x, historically followed by correction",
+    longTermProjection: "$700–800 in 5 years at historical average returns",
+    metrics: { ...DEMO_DATA.SPY.valuation?.metrics, marketCap: "$50T (index)" },
+  },
+  trendAnalysis: {
+    ...DEMO_DATA.SPY.trendAnalysis,
+    keyMilestones: [
+      { year: "2022", event: "-25% correction amid Fed rate hikes", impact: "negative" },
+      { year: "2023", event: "+26% recovery, AI tech rally", impact: "positive" },
+      { year: "2024", event: "New ATHs, S&P 500 above 5,000 for first time", impact: "positive" },
+      { year: "2025", event: "Trade wars — short-term corrections", impact: "negative" },
+    ],
+    trendConclusion: "S&P 500 maintains long-term uptrend. Short-term corrections get bought. AI companies pull the index higher.",
+  },
+  macro: {
+    ...DEMO_DATA.SPY.macro,
+    globalContext: "Fed cut rates to 3.75%. US economy resilient. Labor market strong. S&P 500 earnings +12% y/y.",
+    interestRates: { fedRate: "3.75%", trend: "falling", impactNote: "Rate cuts historically positive for stocks — TINA effect" },
+    inflation: { usCPI: "2.8%", trend: "stable", impactNote: "Inflation at target — Fed can maintain easy policy" },
+    geopolitics: [
+      { event: "Trade tariffs — short-term pressure on 2026 earnings", relevance: "medium", impact: "negative", date: "2026-02" },
+      { event: "Strong US labor market, unemployment 3.7%", relevance: "high", impact: "positive", date: "2026-04" },
+    ],
+    sectorMacro: "Technology and AI driving S&P 500. Top-7 companies generating 40% of index returns. Small cap lagging.",
+    recession: { probability: "low", note: "Recession probability ~12% — Fed managing soft landing" },
+    commodities: { oil: "$70/bbl", gold: "$2,850/oz", relevance: "Moderate commodity prices positive for corporate margins" },
+    newsBackground: [
+      { title: "S&P 500 reached 5,700 — new all-time high", summary: "AI companies and financial sector leading gains", date: "2026-04-01", sentiment: "positive", source: "Bloomberg" },
+      { title: "S&P 500 Q4 2025 earnings — beat expectations", summary: "78% of companies exceeded EPS forecasts", date: "2026-02-15", sentiment: "positive", source: "FactSet" },
+    ],
+    macroConclusion: "Macro supports S&P 500. Easy Fed + strong economy + AI = continued growth, but pace will slow.",
+  },
+  kondratiev: {
+    ...DEMO_DATA.SPY.kondratiev,
+    phaseDescription: "Kondratiev Autumn — peak financialization, high multiples, wealth distribution",
+    waveTechnology: "Information Technology / Artificial Intelligence",
+    assetFitReason: "SPY — broad diversification, benefits from growth but loses during phase change",
+    historicalAnalogy: "S&P 500 in 1996–2000 — final phase of boom before dot-com crash",
+    riskFromCycle: "Transition to Kondratiev Winter could give -30–50% correction in broad market",
+    opportunityFromCycle: "Best 'buy and hold' asset in most historical periods",
+    kondratievConclusion: "SPY — fundamental asset for any long-term portfolio. Best choice for investors without time for analysis.",
+  },
+  technical: {
+    ...DEMO_DATA.SPY.technical,
+    technicalNote: "SPY near all-time highs. $540 support (200-day MA). New high $590 on positive news. RSI neutral.",
+  },
+  growth: {
+    ...DEMO_DATA.SPY.growth,
+    userGrowth: "+$200B passive investments per year",
+    growthDrivers: ["AI technology (35% index weight)", "Financial sector", "Healthcare", "Consumer sector"],
+  },
+  historical: {
+    ...DEMO_DATA.SPY.historical,
+    crisisBehavior: "Historically recovers within 2–3 years after every crisis",
+  },
+  sentiment: {
+    ...DEMO_DATA.SPY.sentiment,
+    sentimentNote: "Passive investing — $200B+ per year into index funds. Sustained demand for SPY.",
+  },
+  riskProfile: {
+    ...DEMO_DATA.SPY.riskProfile,
+    downsideRisk: "-20–35% in recession, recovery in 2–3 years",
+    factors: ["Top-10 concentration (35%)", "P/E above historical average", "Trade tariffs"],
+  },
+  recommendation: {
+    ...DEMO_DATA.SPY.recommendation,
+    timeHorizon: "12–24 months",
+    summary: "SPY is the foundational asset for any long-term portfolio. Current price has slight premium but long-term trend is up. Buy on correction to $535–550. Best choice for passive investors.",
+    keyPoints: [
+      "Historical return +10% annually — better than 90% of active managers",
+      "Fed 3.75% — TINA effect, money flowing into equities",
+      "S&P 500 earnings +12% y/y — fundamental growth, not just multiples",
+      "P/E 22x slightly above norm but justified at low rates",
+      "Buy zone $535–550 offers 16%+ upside to $640 target",
+    ],
+  },
+  sources: [
+    { name: "FactSet Earnings Insight", url: "https://factset.com", data: "S&P 500 EPS growth +12% y/y, 78% beat rate", date: "2026-04-10" },
+    { name: "State Street SPY Factsheet", url: "https://ssga.com", data: "AUM $600B, TER 0.0945%", date: "2026-04-01" },
+  ],
+};
+
+const DEMO_DATA_EN: Record<string, AnalysisData> = {
+  AAPL: EN_AAPL, BTC: EN_BTC, TSLA: EN_TSLA,
+  NVDA: EN_NVDA, ETH: EN_ETH, SPY: EN_SPY,
+  MSFT: DEMO_DATA.MSFT, GOOGL: DEMO_DATA.GOOGL, AMZN: DEMO_DATA.AMZN,
+  META: DEMO_DATA.META, BABA: DEMO_DATA.BABA, SBER: DEMO_DATA.SBER,
+  LKOH: DEMO_DATA.LKOH, SOL: DEMO_DATA.SOL, BNB: DEMO_DATA.BNB,
+  XRP: DEMO_DATA.XRP, QQQ: DEMO_DATA.QQQ, GLD: DEMO_DATA.GLD,
+  VT: DEMO_DATA.VT, IMOEX: DEMO_DATA.IMOEX,
+  "T-BILL": DEMO_DATA["T-BILL"], OFZ: DEMO_DATA.OFZ,
+  HYG: DEMO_DATA.HYG, TLT: DEMO_DATA.TLT,
+};
+
+/** Returns demo data in the requested language */
+export function getDemoData(lang: Lang): Record<string, AnalysisData> {
+  return lang === "ru" ? DEMO_DATA : DEMO_DATA_EN;
+}
