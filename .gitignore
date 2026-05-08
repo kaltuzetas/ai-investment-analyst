@@ -15,6 +15,9 @@ Thumbs.db
 # Backend — core business logic (not published)
 proxy.js
 
+# AI prompts — competitive advantage (not published)
+src/prompts/
+
 # Strategy & marketing documents (not published)
 TASKS.md
 INVESTOR_DECK.md
